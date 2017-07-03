@@ -15,13 +15,13 @@
 
             <ul class="dropdown-menu" role="menu">
                 <li>
-                    <a href="{{ route('logout') }}"
+                    <a href="{{ route('admin.logout') }}"
                         onclick="event.preventDefault();
                                  document.getElementById('logout-form').submit();">
                         Logout
                     </a>
 
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
                         {{ csrf_field() }}
                     </form>
                 </li>
@@ -39,7 +39,8 @@
                 <div class="panel-heading">ADMIN Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in as <strong>ADMIN</strong>!
+                    @component('components.who')
+                    @endcomponent
                 </div>
             </div>
         </div>
