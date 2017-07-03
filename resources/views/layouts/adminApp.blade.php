@@ -41,7 +41,6 @@
 
                     @yield('content1')
                     
-                    
                 </div>
             </div>
         </nav>
