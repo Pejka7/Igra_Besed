@@ -15,6 +15,8 @@ class CreateProfilesTable extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->integer('userId') -> primary();
+            $table->string('name');
+            $table->tinyInteger('age');
             $table->unsignedSmallInteger('lastGameId')->nullable();
             $table->unsignedSmallInteger('highestGameId')->nullable();
             $table->unsignedTinyInteger('lavel')->nullable();
