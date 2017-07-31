@@ -73,6 +73,8 @@
                     @else
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
+                        <a href="{{ url('/addSlolksData') }}">Add sloleks data</a>
+                        <a href="{{ url('/addData') }}">Add other data</a>
                     @endif
                 </div>
             @endif

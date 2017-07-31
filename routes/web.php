@@ -18,6 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/addData', 'AddDataController@upload');
+Route::post('/saveData', 'AddDataController@uploadSubmit');
+Route::get('/addSloleksData', 'AddSloleksDataController');
 Route::post('/users/logout', 'Auth\LoginController@userLogout')->name('user.logout');
 
 Route::prefix('admin') -> group(function(){ 
